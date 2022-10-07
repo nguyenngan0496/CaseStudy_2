@@ -8,3 +8,10 @@ body, head {
 .shop-option {
     display: flex;
 }
+
+
+.carousel-inner {
+    position: relative;
+    background-size: cover;
+    height: 450px;
+  }
