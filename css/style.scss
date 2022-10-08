@@ -1,0 +1,237 @@
+$primary:#B9AEBB;
+$secondary:#354053;
+$tertiary:#554F64;
+$whiteborder: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+
+@mixin form-btn {
+    .form-control {
+        background-color: $tertiary;
+    }
+
+    .btn {
+        background-color: $tertiary;
+
+        .bi {
+            color: $primary;
+        }
+    }
+}
+
+@mixin icon {
+    a {
+        color: $tertiary;
+        transition: 0.5s;
+        font-size: larger;
+        font-size: x-large;
+       
+    }
+
+    a:hover {
+        
+        transform: scale(1.5);
+    }
+
+    .bi {
+        margin-left: 10px;
+        text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+        1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+    }
+}
+
+
+body, head {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif !important;
+}
+
+a {
+    
+    text-decoration: none;
+}
+
+ul {
+    list-style-type:circle;
+}
+
+// /////////////////////////
+// First Nav
+.first-nav {
+    background-color: azure;
+    background: repeating-linear-gradient(
+    135deg,
+    $primary,
+    $primary 1px,
+    #fbfbff 1px,
+    #fbfbff 10px);
+
+    .input-group {
+        @include form-btn()
+    }
+
+    .nav-icon {
+        @include icon()
+    }
+}
+
+.nav-left img {
+    margin-left: 70px;
+}
+.nav-icon {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+// /////////////////////////
+// Second Nav
+.second-nav div {
+    background-color: $secondary;
+    
+    #navbarNavDropdown {
+        justify-content: center;
+    }
+    .nav-item a {
+        color: $primary;
+        margin:0px 50px;
+        transition: 0.5s;
+    }
+
+    .nav-item .nav-link:hover {
+        transform: scale(1.5);
+        color: azure;
+    }
+
+    .shop-option {
+        display: flex;
+
+        a {
+            display: inline-block;
+            width: 70%;
+        }
+        a:hover {
+            color: azure;
+            transform: scale(1.1);
+            background-color: $secondary;
+        }
+
+        h5 {
+            font-weight: bolder;
+        }
+    }
+
+   
+}
+
+@supports ((position: -webkit-sticky) or (position: sticky)) {
+    .second-nav {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+      z-index: 5;
+    }
+}
+
+
+
+// /////////////////////////
+// Banner
+.carousel-inner {
+    position: relative;
+    background-size: cover;
+    height: 450px;
+}
+
+// /////////////////////////
+// Product
+.product {
+    margin: 0px 10px
+}
+
+.intro-is {
+    background-color: lighten($secondary,50%);
+}
+
+.intro-po {
+    background-color: lighten($tertiary,50%);
+}
+
+.introbtn {
+    
+    text-align: center;
+    width: 100px;
+    border: 1px solid white;
+    
+    a {
+    color: $tertiary;
+    font-size: large;
+    }
+
+}
+
+.introbtn:hover {
+    background-color: azure;
+    transition: 0.5s;
+    
+    a {
+        color: $secondary;
+    }
+}
+// /////////////////////////
+// Feedback
+
+.feedback {
+    background-color: $primary;
+}
+
+// /////////////////////////
+// Footer
+
+#footer {
+    background-color: $secondary;
+
+    .newsletter {
+        padding:30px;
+        background: repeating-linear-gradient(
+        135deg,
+        $primary,
+        $primary 1px,
+        #fbfbff 1px,
+        #fbfbff 10px);
+        
+        p {
+            font-weight: bolder;
+            font-size: x-large;
+            color: $secondary;
+            text-shadow: 5px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+               1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+        }
+
+    }
+
+    @include form-btn; 
+    
+    .social-link {
+        a {
+            display: inline-block;
+        }
+        @include icon();
+
+
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+

@@ -8,51 +8,74 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-  
-    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <!-- First Navigation -->
-    <nav class="navbar navbar-light bg-light">
-        <div class="container">
-            <div class="1stnav-left">
+    <nav class="first-nav navbar navbar-light bg-light">
+        <div class="container row">
+            <div class="nav-left col-6">
                 <a href="#">
                 <img src="./Src/logo.png" alt="Logo" style="width: 100px">
                 </a>
             </div>
-            <div class="1stnav-right">
-                <input type="text" placeholder="Search..">
-                <a href="#"><i class="bi bi-heart-fill"></i></a>
-                <a href="#"><i class="bi bi-bag-fill"></i></a>
-                <a href="#"><i class="bi bi-person-fill"></i></a>
+            <div class="nav-right col-5" style="display:flex;">
+              <div class="input-group" style="margin: auto 10px;">
+                <input type="text" class="form-control" placeholder="Search..." width="10">
+                <button class="btn btn-outline-secondary text-center" type="button" ><i class="bi bi-search-heart"></i></button>
+              </div>
+              <div class="nav-icon" style="margin: auto 10px;">
+                <a href="#">
+                  <span data-bs-placement="bottom" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Wishlist">
+                    <i class="bi bi-heart-fill"></i>
+                  </span>
+                </a>
+                <a href="#">
+                  <span data-bs-placement="bottom" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Cart">
+                    <i class="bi bi-bag-fill"></i>
+                  </span>
+                </a>
+                <a href="#">
+                  <span data-bs-placement="bottom" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="My Account">
+                    <i class="bi bi-person-fill"></i>
+                  </span>
+                </a>
+              </div>
             </div>
         </div>
     </nav>
     <!-- End First Navigation -->
     
     <!-- Second Navigation -->
-    <nav class="secondnav navbar navbar-expand-lg bg-light">
+    <nav class="second-nav navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
           
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link" href="#">Home</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
                     Shop
                 </a>
                 
                  <div class="dropdown-menu">
                     <div class="shop-option">
                         <div>
-                            <a class="dropdown-item" href="#"><h6>Latest</h6></a>
+                            <a class="dropdown-item" href="#"><h5>Latest</h5></a>
                             <a class="dropdown-item" href="#">New Releases</a>
                             <a class="dropdown-item" href="#">Pre-order</a>
                         </div>
                         <div>
-                            <a class="dropdown-item" href="#"><h6>Official Merchandise</h6></a>
+                            <a class="dropdown-item" href="#"><h5>Official Merchandise</h5></a>
                             <a class="dropdown-item" href="#">SM Merchandise</a>
                             <a class="dropdown-item" href="#">YG Merchandise</a>
                             <a class="dropdown-item" href="#">JYP Merchandise</a>
@@ -60,9 +83,9 @@
                             <a class="dropdown-item" href="#">Others</a>
                         </div>
                         <div>
-                        <a class="dropdown-item" href="#"><h6>Groups</h6></a>
+                        <a class="dropdown-item" href="#"><h5>Groups</h5></a>
                             <a class="dropdown-item" href="#">Lesserafim</a>
-                            <a class="dropdown-item" href="#">Black Pink</a>
+                            <a class="dropdown-item" href="#">Blackpink</a>
                             <a class="dropdown-item" href="#">BTS</a>
                             <a class="dropdown-item" href="#">ENHYPEN</a>
                             <a class="dropdown-item" href="#">Others</a>
@@ -121,129 +144,157 @@
     <!-- End Banner -->
     
     <!-- Product -->
-    <div class="Product container mx-auto mt-5">
+    <div class="product">
+      <div class="container mt-5">
         
-        <div class="Instock row">
-            <div class="Intro col-2 bg-dark text-white">
+        <div class="instock row">
+            <div class="intro-is col-2 text-white">
                 <h2>Instock</h2>
-                <p>Available for immediate sale in a store</p>
+                <p>Check lastest available albums with many benefits in our shop!</p>
                 <div class="introbtn"><a href="#"><b>CHECK</b></a></div>
             </div>
-            <div class="Albums row col-9">
-                <div class="card col-3 border-0" >
-                    <img src="./Src/Album1.jpg" class="card-img-top" alt="Album1">
+            <div class="albums row col-10">
+                <div class="card col border-0" >
+                    <img src="./Src/Album1.webp" class="card-img-top" alt="Album1">
                     <div class="card-body">
-                      <P class="card-title">ENHYPEN | BORDER:CARNIVAL 2nd Mini Album</P>
+                      <P class="card-title">Blackpink | Born Pink 2nd Album</P>
+                      <p class="price">$35</p>
                     </div>
                     <div class="card-body">
-                      <a href="#" class="card-link">Wish List</a>
+                      <a href="#" class="card-link">Wishlist</a>
                       <a href="#" class="card-link">Add to Cart</a>
                     </div>
                 </div>
         
-                <div class="card col-3 border-0" >
-                    <img src="./Src/Album1.jpg" class="card-img-top" alt="Album1">
+                <div class="card col  border-0" >
+                    <img src="./Src/Album2.jpg" class="card-img-top" alt="Album2">
                     <div class="card-body">
-                      <P class="card-title">ENHYPEN | BORDER:CARNIVAL 2nd Mini Album</P>
+                      <P class="card-title">BTS | Love Yourself Answer Album</P>
+                      <p class="price">$99</p>
                     </div>
                     <div class="card-body">
-                      <a href="#" class="card-link">Wish List</a>
+                      <a href="#" class="card-link">Wishlist</a>
                       <a href="#" class="card-link">Add to Cart</a>
                     </div>
                 </div>
         
-                <div class="card col-3 border-0" >
-                    <img src="./Src/Album1.jpg" class="card-img-top" alt="Album1">
+                <div class="card col  border-0" >
+                    <img src="./Src/Album3.png" class="card-img-top" alt="Album3">
                     <div class="card-body">
-                      <P class="card-title">ENHYPEN | BORDER:CARNIVAL 2nd Mini Album</P>
+                      <P class="card-title">LE SSERAFIM | FEARLESS 1ST Mini Album</P>
+                      <p class="price">$62</p>
                     </div>
                     <div class="card-body">
-                      <a href="#" class="card-link">Wish List</a>
+                      <a href="#" class="card-link">Wishlist</a>
                       <a href="#" class="card-link">Add to Cart</a>
                     </div>
                 </div>
         
-                <div class="card col-3 border-0" >
-                    <img src="./Src/Album1.jpg" class="card-img-top" alt="Album1">
+                <div class="card col  border-0" >
+                    <img src="./Src/Album4.jpg" class="card-img-top" alt="Album4">
                     <div class="card-body">
-                      <P class="card-title">ENHYPEN | BORDER:CARNIVAL 2nd Mini Album</P>
+                      <P class="card-title">ENHYPEN | DIMENSION: DILEMMA Album (3 Version Set)</P>
+                      <p class="price">$145</p>
                     </div>
                     <div class="card-body">
-                      <a href="#" class="card-link">Wish List</a>
+                      <a href="#" class="card-link">Wishlist</a>
                       <a href="#" class="card-link">Add to Cart</a>
                     </div>
                 </div>
+
+                <div class="card col border-0" >
+                  <img src="./Src/Album5.jpg" class="card-img-top" alt="Album5">
+                  <div class="card-body">
+                    <P class="card-title">BIG BANG | MADE SERIES Album</P>
+                  </div>
+                  <div class="card-body">
+                    <a href="#" class="card-link">Wishlist</a>
+                    <a href="#" class="card-link">Add to Cart</a>
+                  </div>
+              </div>
+
             </div>
-            <div class="More text-end col-1"><a href="#">More...</a></div>
         </div>
 
-        <div class="Pre-order row mt-5">
-            <div class="Intro col-2 bg-secondary text-white">
+        <div class="pre-order row mt-5">
+            <div class="intro-po col-2 text-white">
                 <h2>Pre-order</h2>
-                <p>Coming soon! </p>
+                <p>Coming soon! Pre-order to apply fansign and get many benefits!</p>
                 <div class="introbtn"><a href="#"><b>CHECK</b></a></div>
             </div>
-            <div class="Albums row col-9">
-                <div class="card col-3 border-0" >
-                    <img src="./Src/Album1.jpg" class="card-img-top" alt="Album1">
+            <div class="albums row col-10">
+               
+                <div class="card col border-0" >
+                    <img src="./Src/Album6.webp" class="card-img-top" alt="Album6">
                     <div class="card-body">
-                      <P class="card-title">ENHYPEN | BORDER:CARNIVAL 2nd Mini Album</P>
+                      <P class="card-title">ENHYPEN | SADAME Japan 1st Album</P>
                     </div>
                     <div class="card-body">
-                      <a href="#" class="card-link">Wish List</a>
+                      <a href="#" class="card-link">Wishlist</a>
                       <a href="#" class="card-link">Add to Cart</a>
                     </div>
                 </div>
         
-                <div class="card col-3 border-0" >
-                    <img src="./Src/Album1.jpg" class="card-img-top" alt="Album1">
+                <div class="card col border-0" >
+                    <img src="./Src/Album7.jpg" class="card-img-top" alt="Album7">
                     <div class="card-body">
-                      <P class="card-title">ENHYPEN | BORDER:CARNIVAL 2nd Mini Album</P>
+                      <P class="card-title">(G)I-DLE | I LOVE 5th Mini Album</P>
                     </div>
                     <div class="card-body">
-                      <a href="#" class="card-link">Wish List</a>
+                      <a href="#" class="card-link">Wishlist</a>
                       <a href="#" class="card-link">Add to Cart</a>
                     </div>
                 </div>
         
-                <div class="card col-3 border-0" >
-                    <img src="./Src/Album1.jpg" class="card-img-top" alt="Album1">
+                <div class="card col border-0" >
+                    <img src="./Src/Album8.png" class="card-img-top" alt="Album8">
                     <div class="card-body">
-                      <P class="card-title">ENHYPEN | BORDER:CARNIVAL 2nd Mini Album</P>
+                      <P class="card-title">MAMAMOO | MIC ON (NEMO VER.)</P>
                     </div>
                     <div class="card-body">
-                      <a href="#" class="card-link">Wish List</a>
+                      <a href="#" class="card-link">Wishlist</a>
                       <a href="#" class="card-link">Add to Cart</a>
                     </div>
                 </div>
-        
-                <div class="card col-3 border-0" >
-                    <img src="./Src/Album1.jpg" class="card-img-top" alt="Album1">
-                    <div class="card-body">
-                      <P class="card-title">ENHYPEN | BORDER:CARNIVAL 2nd Mini Album</P>
-                    </div>
-                    <div class="card-body">
-                      <a href="#" class="card-link">Wish List</a>
-                      <a href="#" class="card-link">Add to Cart</a>
-                    </div>
+
+                <div class="card col border-0" >
+                  <img src="./Src/Album9.webp" class="card-img-top" alt="Album9">
+                  <div class="card-body">
+                    <P class="card-title">LIMELIGHT | LIMELIGHT Debut Album</P>
+                  </div>
+                  <div class="card-body">
+                    <a href="#" class="card-link">Wishlist</a>
+                    <a href="#" class="card-link">Add to Cart</a>
+                  </div>
                 </div>
+
+                <div class="card col border-0" >
+                  <img src="./Src/Album10.jpg" class="card-img-top" alt="Album10">
+                  <div class="card-body">
+                    <P class="card-title">LE SSERAFIM | ANTIFRAGILE 2nd Mini Album</P>
+                  </div>
+                  <div class="card-body">
+                    <a href="#" class="card-link">Wishlist</a>
+                    <a href="#" class="card-link">Add to Cart</a>
+                  </div>
+              </div>
             </div>
-            <div class="More text-end col-1"><a href="#">More...</a></div>
         </div>
 
         
     </div>
+    </div>
     <!-- End Product -->
 
     <!-- Feedback -->
-    <div class="container">
+    <div class="feedback mx-auto">
       <div class="title-fb fs-2 mt-5 text-center">
         <i class="bi bi-emoji-smile-fill"></i>Feedback<i class="bi bi-emoji-smile-fill"></i>
       </div>
-      <div class="feedback">
-        <div>
-          <marquee behavior="scroll" direction="left">
-            <div>
+      <div class="feedback-cmt">
+        <marquee behavior="alternate" direction="left">
+          <div style="display: flex;">
+            <div style="margin: auto 40px;">
               <div class="rating">
                 <i class="bi bi-star-fill"></i>
                 <i class="bi bi-star-fill"></i>
@@ -257,59 +308,181 @@
                 BORDER:CARNIVAL 2nd Mini Album <br>
                 2022/10/15</p>
             </div>
-            
-          </marquee>
-        </div>
-        
-  
-        <marquee behavior="scroll" direction="left">
-          <div>
-            <div class="rating">
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
+            <div style="margin: auto 40px;">
+              <div class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <h6>Username</h6>
+              <p>Comment Comment Comment Comment </p>
+              <p class="fw-light fst-italic">
+                BORDER:CARNIVAL 2nd Mini Album <br>
+                2022/10/15</p>
             </div>
-            <h6>Username</h6>
-            <p>Comment Comment Comment Comment </p>
-            <p class="fw-light fst-italic">
-              BORDER:CARNIVAL 2nd Mini Album <br>
-              2022/10/15</p>
+            <div style="margin: auto 40px;">
+              <div class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <h6>Username</h6>
+              <p>Comment Comment Comment Comment </p>
+              <p class="fw-light fst-italic">
+                BORDER:CARNIVAL 2nd Mini Album <br>
+                2022/10/15</p>
+            </div>
+            <div style="margin: auto 40px;">
+              <div class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <h6>Username</h6>
+              <p>Comment Comment Comment Comment </p>
+              <p class="fw-light fst-italic">
+                BORDER:CARNIVAL 2nd Mini Album <br>
+                2022/10/15</p>
+            </div>
           </div>
+  
+        </marquee>
+
+        <marquee behavior="alternate" direction="right">
+          <div style="display: flex;">
+            <div style="margin: auto 40px;">
+              <div class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <h6>Username</h6>
+              <p>Comment Comment Comment Comment </p>
+              <p class="fw-light fst-italic">
+                BORDER:CARNIVAL 2nd Mini Album <br>
+                2022/10/15</p>
+            </div>
+            <div style="margin: auto 40px;">
+              <div class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <h6>Username</h6>
+              <p>Comment Comment Comment Comment </p>
+              <p class="fw-light fst-italic">
+                BORDER:CARNIVAL 2nd Mini Album <br>
+                2022/10/15</p>
+            </div>
+            <div style="margin: auto 40px;">
+              <div class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <h6>Username</h6>
+              <p>Comment Comment Comment Comment </p>
+              <p class="fw-light fst-italic">
+                BORDER:CARNIVAL 2nd Mini Album <br>
+                2022/10/15</p>
+            </div>
+            <div style="margin: auto 40px;">
+              <div class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <h6>Username</h6>
+              <p>Comment Comment Comment Comment </p>
+              <p class="fw-light fst-italic">
+                BORDER:CARNIVAL 2nd Mini Album <br>
+                2022/10/15</p>
+            </div>
+          </div>
+  
         </marquee>
       </div>
 
     </div>
     <!-- End Feedback -->
    
-    <!-- contact -->
+    <!-- Footer -->
     <section id="footer">
-      <div class="title-fb fs-2 mt-5 text-center">
-        <i class="bi bi-emoji-smile-fill"></i>Contact<i class="bi bi-emoji-smile-fill"></i>
-      </div>
-
-      <div class="footer-row row mx-auto">
-          <div class="footer-left col-6">
-              <h1>Opening Hours</h1>
-              <p><i class="bi bi-clock"></i> Monday to Friday - 9AM to 9PM</p>
-              <p><i class="bi bi-clock"></i> Saturday to Sunday - 9AM to 12PM</p>
+      
+      <div class="newsletter row mx-auto">
+        <div class="col-3">
+          <p>Sign up to newsletter!</p>
+        </div>
+        <div class="sign-mail col-5">
+          <div class="input-group mb-1">
+            <input type="text" class="form-control" placeholder="Your email address">
+            <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class="bi bi-envelope-exclamation-fill"></i></button>
           </div>
-          <div class="footer-right col-6 text-end" >
-              <h1>Get in touch</h1>
-              <p></i>Number 29, X Street, Y City, Z <i class="bi bi-geo-alt-fill"></i></p>
-              <p></i>1515zShop@info.shop <i class="bi bi-envelope-fill"></i></p>
-              <p>+84 4444 44444 <i class="bi bi-telephone-fill"></i></p>
-          </div>
-      </div>
-      <div class="social-link text-center">
+        </div>
+        <div class="social-link text-center col-4">
           <a href="#"><i class="bi bi-facebook"></i></a>
           <a href="#"><i class="bi bi-instagram"></i></a>
           <a href="#"><i class="bi bi-twitter"></i></a>
           <a href="#"><i class="bi bi-youtube"></i></a>
-          <p>Copyright © 1515z Shop. All Rights Reserved.</p>
       </div>
+      </div>
+      
+      <div class="links row mt-5 mb-5 mx-auto">
+        <div class="col-4">
+          Notice
+          <ul>
+            <li><a href="">Terms and Conditions</a></li>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">How to Order</a></li>
+            <li><a href="">Terms and Conditions</a></li>
+          </ul>
+        </div>
+
+        <div class="col-4">
+          Customer Center
+          <ul>
+            <li><a href="">My Account</a></li>
+            <li><a href="">FAQ</a></li>
+            <li><a href="">Contact us</a></li>
+            <li><a href="">TRACKING</a></li>
+          </ul>
+        </div>
+
+        <div class="col-4">
+          Shopping Tips
+          <ul>
+            <li><a href="">New products</a></li>
+            <li><a href="">Best sales</a></li>
+            <li><a href="">Prices drop</a></li>
+            <li><a href="">Release Date Calendar</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="text-center small">Copyright © 1515z Shop. All Rights Reserved.</p>
   </section>
-  <!-- end contact -->
+  <!-- End Footer -->
+
+  <span class="" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Wishlist">
+    <i class="bi bi-youtube"></i>
+  </span>
+
+  <script>
+    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+    const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+  </script>
 </body>
 </html>
