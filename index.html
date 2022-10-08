@@ -21,12 +21,12 @@
     <!-- First Navigation -->
     <nav class="first-nav navbar navbar-light bg-light">
         <div class="container row">
-            <div class="nav-left col-6">
+            <div class="nav-left col-md-6 col-12">
                 <a href="#">
                 <img src="./Src/logo.png" alt="Logo" style="width: 100px">
                 </a>
             </div>
-            <div class="nav-right col-5" style="display:flex;">
+            <div class="nav-right col-md-5 col-12" style="display:flex;">
               <div class="input-group" style="margin: auto 10px;">
                 <input type="text" class="form-control" placeholder="Search..." width="10">
                 <button class="btn btn-outline-secondary text-center" type="button" ><i class="bi bi-search-heart"></i></button>
@@ -59,20 +59,20 @@
           
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
-              <li class="nav-item">
+              <li class="nav-item ">
                 <a class="nav-link" href="#">Home</a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+              <li class="nav-item  dropdown">
+                <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown">
                     Shop
                 </a>
                 
                  <div class="dropdown-menu">
                     <div class="shop-option">
                         <div>
-                            <a class="dropdown-item" href="#"><h5>Latest</h5></a>
-                            <a class="dropdown-item" href="#">New Releases</a>
-                            <a class="dropdown-item" href="#">Pre-order</a>
+                            <a class="dropdown-item" href="#products"><h5>Latest</h5></a>
+                            <a class="dropdown-item" href="#instock">New Releases</a>
+                            <a class="dropdown-item" href="#preorder">Pre-order</a>
                         </div>
                         <div>
                             <a class="dropdown-item" href="#"><h5>Official Merchandise</h5></a>
@@ -96,11 +96,11 @@
                 
                 
               </li>
-              <li class="nav-item">
+              <li class="nav-item ">
                 <a class="nav-link" href="#">Campaign</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+              <li class="nav-item ">
+                <a class="nav-link" href="#contact">Contact</a>
               </li>
               
             </ul>
@@ -144,11 +144,11 @@
     <!-- End Banner -->
     
     <!-- Product -->
-    <div class="product">
+    <div class="product" id="products">
       <div class="container mt-5">
         
-        <div class="instock row">
-            <div class="intro-is col-2 text-white" style="height:430px">
+        <div class="instock row" id="instock">
+            <div class="intro-is col-md-2 col-2 text-white" style="height:430px">
                 <h2>Instock</h2>
                 <p>Check lastest available albums with many benefits in our shop!</p>
                 <div class="introbtn"><a href="#"><b>CHECK for more...</b></a></div>
@@ -255,7 +255,7 @@
             
         </div>
 
-        <div class="pre-order row mt-5">
+        <div class="pre-order row mt-5" id="preorder">
             <div class="intro-po col-2 text-white" style="height:430px">
                 <h2>Pre-order</h2>
                 <p>Coming soon! <br>
@@ -558,7 +558,7 @@
     <!-- End Feedback -->
    
     <!-- Footer -->
-    <div class="footer">
+    <div class="footer" id="contact">
       
       <div class="newsletter row mx-auto">
         <div class="col-3">
@@ -574,8 +574,13 @@
           <a href="#"><i class="bi bi-facebook"></i></a>
           <a href="#"><i class="bi bi-instagram"></i></a>
           <a href="#"><i class="bi bi-twitter"></i></a>
-          <a href="#"><i class="bi bi-youtube"></i></a>
-      </div>
+          <a href="#"><i class="bi bi-youtube"></i></a> <br>
+          <div class="address">
+            <p></i>Number 15, X Street, Y City, Z Nation <i class="bi bi-geo-alt-fill"></i></p>
+            <p></i>1515zShop@info.shop <i class="bi bi-envelope-fill"></i></p>
+            <p>+84 1015 1115 <i class="bi bi-telephone-fill"></i></p>
+          </div>
+        </div>
       </div>
       
       <div class="links row mt-5 mb-5 mx-auto">
