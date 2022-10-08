@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-
+  
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,7 +17,7 @@
         <div class="container">
             <div class="1stnav-left">
                 <a href="#">
-                <img src="" alt="Logo">
+                <img src="./Src/logo.png" alt="Logo" style="width: 100px">
                 </a>
             </div>
             <div class="1stnav-right">
@@ -31,7 +31,7 @@
     <!-- End First Navigation -->
     
     <!-- Second Navigation -->
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="secondnav navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
           
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -95,15 +95,15 @@
               <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="10000">
+              <div class="carousel-item active" data-bs-interval="4000">
                 <img src="./Src/Banner1.jpg" class="d-block w-100" alt="Banner1">
                 
               </div>
-              <div class="carousel-item" data-bs-interval="2000">
+              <div class="carousel-item" data-bs-interval="4000">
                 <img src="./Src/Banner2.jpg" class="d-block w-100" alt="Banner2">
                
               </div>
-              <div class="carousel-item">
+              <div class="carousel-item" data-bs-interval="4000">
                 <img src="./Src/Banner3.jpg" class="d-block w-100" alt="Banner3">
                 
               </div>
@@ -124,10 +124,10 @@
     <div class="Product container mx-auto mt-5">
         
         <div class="Instock row">
-            
             <div class="Intro col-2 bg-dark text-white">
                 <h2>Instock</h2>
                 <p>Available for immediate sale in a store</p>
+                <div class="introbtn"><a href="#"><b>CHECK</b></a></div>
             </div>
             <div class="Albums row col-9">
                 <div class="card col-3 border-0" >
@@ -181,6 +181,7 @@
             <div class="Intro col-2 bg-secondary text-white">
                 <h2>Pre-order</h2>
                 <p>Coming soon! </p>
+                <div class="introbtn"><a href="#"><b>CHECK</b></a></div>
             </div>
             <div class="Albums row col-9">
                 <div class="card col-3 border-0" >
@@ -234,6 +235,81 @@
     </div>
     <!-- End Product -->
 
+    <!-- Feedback -->
+    <div class="container">
+      <div class="title-fb fs-2 mt-5 text-center">
+        <i class="bi bi-emoji-smile-fill"></i>Feedback<i class="bi bi-emoji-smile-fill"></i>
+      </div>
+      <div class="feedback">
+        <div>
+          <marquee behavior="scroll" direction="left">
+            <div>
+              <div class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <h6>Username</h6>
+              <p>Comment Comment Comment Comment </p>
+              <p class="fw-light fst-italic">
+                BORDER:CARNIVAL 2nd Mini Album <br>
+                2022/10/15</p>
+            </div>
+            
+          </marquee>
+        </div>
+        
+  
+        <marquee behavior="scroll" direction="left">
+          <div>
+            <div class="rating">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <h6>Username</h6>
+            <p>Comment Comment Comment Comment </p>
+            <p class="fw-light fst-italic">
+              BORDER:CARNIVAL 2nd Mini Album <br>
+              2022/10/15</p>
+          </div>
+        </marquee>
+      </div>
+
+    </div>
+    <!-- End Feedback -->
    
+    <!-- contact -->
+    <section id="footer">
+      <div class="title-fb fs-2 mt-5 text-center">
+        <i class="bi bi-emoji-smile-fill"></i>Contact<i class="bi bi-emoji-smile-fill"></i>
+      </div>
+
+      <div class="footer-row row mx-auto">
+          <div class="footer-left col-6">
+              <h1>Opening Hours</h1>
+              <p><i class="bi bi-clock"></i> Monday to Friday - 9AM to 9PM</p>
+              <p><i class="bi bi-clock"></i> Saturday to Sunday - 9AM to 12PM</p>
+          </div>
+          <div class="footer-right col-6 text-end" >
+              <h1>Get in touch</h1>
+              <p></i>Number 29, X Street, Y City, Z <i class="bi bi-geo-alt-fill"></i></p>
+              <p></i>1515zShop@info.shop <i class="bi bi-envelope-fill"></i></p>
+              <p>+84 4444 44444 <i class="bi bi-telephone-fill"></i></p>
+          </div>
+      </div>
+      <div class="social-link text-center">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-twitter"></i></a>
+          <a href="#"><i class="bi bi-youtube"></i></a>
+          <p>Copyright © 1515z Shop. All Rights Reserved.</p>
+      </div>
+  </section>
+  <!-- end contact -->
 </body>
 </html>
