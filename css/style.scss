@@ -171,9 +171,9 @@ a {
     h2 {
         color: $secondary;
     }
-
     
 }
+
 
 .intro-po {
     @include intro-col();
@@ -181,6 +181,7 @@ a {
     h2 {
         color: $tertiary;
     }
+    
 }
 
 .introbtn {
@@ -219,6 +220,16 @@ a {
     
     }
     
+    .card-body {
+        position:relative;
+
+        .price {
+            position: absolute;
+            bottom: 40%;
+            left: 40%;
+        }
+    }
+
     .card-link {
         display: inline-block;
         width: 70%;
@@ -226,7 +237,7 @@ a {
         border: 1px solid $secondary;
         transition: 0.5s;
         position: absolute;
-        bottom: 10%;
+        bottom: 0%;
         left: 15%;
        
         
@@ -430,8 +441,24 @@ a {
 }
 
 
+@media only screen and (min-width: 577px),(max-width:767px) {
+    .intro-is, .intro-po {
+      height: auto;
+    }
+}
 
+@media  only screen and (max-width: 576px) {
+    .intro-is, .intro-po {
+      height: auto;
+    }
 
+}  
+
+@media  only screen and (min-width:769px) {
+    .intro-is, .intro-po {
+        height: 430px;
+      }
+}
 
 
 

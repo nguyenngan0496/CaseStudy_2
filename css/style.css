@@ -158,6 +158,14 @@ a {
 .product .card .card-title {
   margin-top: 10px;
 }
+.product .card-body {
+  position: relative;
+}
+.product .card-body .price {
+  position: absolute;
+  bottom: 40%;
+  left: 40%;
+}
 .product .card-link {
   display: inline-block;
   width: 70%;
@@ -165,7 +173,7 @@ a {
   border: 1px solid #354053;
   transition: 0.5s;
   position: absolute;
-  bottom: 10%;
+  bottom: 0%;
   left: 15%;
 }
 .product .card-link p {
@@ -349,4 +357,20 @@ a {
 }
 .footer p {
   color: #F7F7F7;
+}
+
+@media only screen and (min-width: 577px), (max-width: 767px) {
+  .intro-is, .intro-po {
+    height: auto;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .intro-is, .intro-po {
+    height: auto;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .intro-is, .intro-po {
+    height: 430px;
+  }
 }/*# sourceMappingURL=style.css.map */
