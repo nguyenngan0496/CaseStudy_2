@@ -168,13 +168,13 @@ a {
 }
 .product .card-link {
   display: inline-block;
-  width: 70%;
+  width: 100%;
   background-color: #F7F7F7;
   border: 1px solid #354053;
   transition: 0.5s;
   position: absolute;
   bottom: 0%;
-  left: 15%;
+  left: 0%;
 }
 .product .card-link p {
   font-size: medium;
@@ -291,6 +291,166 @@ a {
 .card-body .b-item {
   font-size: 10px;
   font-style: italic;
+}
+
+.breadcrumb a {
+  display: block;
+  color: #554F64;
+  transition: 0.5s;
+}
+.breadcrumb a:hover {
+  transform: scale(1.1);
+  color: rgb(188, 96, 127);
+}
+
+.product-detail {
+  color: #354053;
+}
+.product-detail .product-slide .carousel {
+  position: relative;
+}
+.product-detail .product-slide .carousel-indicators {
+  position: relative;
+  bottom: 0;
+}
+.product-detail .product-slide .carousel-indicators li {
+  width: 100px;
+  height: 100%;
+  cursor: pointer;
+}
+
+.product-checkout {
+  background-color: #F7F7F7;
+  padding: 20px;
+}
+.product-checkout .bi {
+  color: rgb(188, 96, 127);
+}
+.product-checkout .btn {
+  background-color: #B9AEBB;
+  border-collapse: collapse;
+}
+.product-checkout .share a {
+  transition: 0.5s;
+}
+.product-checkout .share a:hover {
+  transform: scale(1.5);
+}
+.product-checkout .add-wl {
+  display: inline-block;
+  width: auto;
+  background-color: #F7F7F7;
+  border: 1px solid #354053;
+  transition: 0.5s;
+  color: rgb(188, 96, 127);
+}
+.product-checkout .add-wl p {
+  font-size: medium;
+  margin: 10px 10px;
+}
+.product-checkout .add-wl:hover {
+  background-color: rgb(188, 96, 127);
+  color: #F7F7F7;
+  border: 1px solid #F7F7F7;
+}
+.product-checkout .add-wl:hover .bi {
+  color: #F7F7F7;
+}
+
+.des button {
+  color: #B9AEBB;
+}
+.des .bi {
+  color: rgb(188, 96, 127);
+}
+
+.recommend .card {
+  text-align: center;
+}
+.recommend .card a {
+  color: #354053;
+  font-weight: bolder;
+  font-size: large;
+}
+.recommend .card .card-title {
+  margin-top: 10px;
+}
+.recommend .card-body {
+  position: relative;
+}
+.recommend .card-body .price {
+  position: absolute;
+  bottom: 40%;
+  left: 40%;
+}
+.recommend .card-link {
+  display: inline-block;
+  width: 100%;
+  font-size: small;
+  background-color: #F7F7F7;
+  border: 1px solid #354053;
+  transition: 0.5s;
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+}
+.recommend .card-link p {
+  font-size: medium;
+  vertical-align: center;
+  margin: 10px 10px;
+}
+.recommend .card-link:hover {
+  background-color: #b6c0d1;
+  color: #F7F7F7;
+  border: 1px solid #F7F7F7;
+}
+.recommend .card-top {
+  position: relative;
+}
+.recommend .addwl {
+  font-size: xx-large;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  font-size: small;
+  text-align: center;
+  transition: 0.5s;
+  opacity: 0;
+  transform: translateX(-50%);
+}
+.recommend .addwl .bi {
+  font-size: x-large;
+  color: #F7F7F7;
+}
+.recommend .addwl p {
+  width: 100px;
+  background-color: #F7F7F7;
+  color: #354053;
+  font-weight: bolder;
+}
+.recommend .card a:hover .card-title {
+  color: rgb(188, 96, 127);
+}
+.recommend .card a:hover .addwl {
+  display: block;
+  color: #B9AEBB;
+  opacity: 1;
+  bottom: 20%;
+}
+.recommend .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 3px;
+  cursor: pointer;
+  background: linear-gradient(180deg, hsla(291deg, 9%, 71%, 0.5) 0%, hsla(302deg, 30%, 84%, 0.5) 0%, hsla(218deg, 22%, 27%, 0.9) 100%);
+  opacity: 0;
+  transition: 0.5s;
+}
+.recommend .card a:hover .overlay {
+  opacity: 1;
 }
 
 .footer {
