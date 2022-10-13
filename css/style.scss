@@ -604,12 +604,11 @@ a {
         }
 
         .overlay {
-            width: 100%;
+            width: 200px;
             height: 100%;
             position: absolute;
             top:0;
-            right:0 ;
-            border-radius:3px;
+            left:10 ;
             cursor: pointer;
             background: linear-gradient(180deg, hsla(291, 9%, 71%, 0.5) 0%, hsla(302, 30%, 84%, 0.5) 0%, hsla(218, 22%, 27%, 0.9) 100%);
             opacity: 0;
@@ -633,7 +632,7 @@ a {
 
 
     .cam-box-item:hover .overlay {
-        opacity: 0.5;;
+        opacity: 0.7;;
     }
 
     .cam-box-item:hover .overlay-text {
@@ -642,7 +641,6 @@ a {
 }
     
 .cam-content {
-    
     text-align: center;
     .card {
         border:none;
