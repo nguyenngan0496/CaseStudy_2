@@ -325,6 +325,7 @@ a {
 }
 .product-checkout .bi {
   color: rgb(188, 96, 127);
+  font-size: large;
 }
 .product-checkout .btn {
   background-color: #B9AEBB;
@@ -451,6 +452,95 @@ a {
 }
 .recommend .card a:hover .overlay {
   opacity: 1;
+}
+
+.campaign .cam-box {
+  display: flex;
+  justify-content: space-around;
+}
+.campaign .cam-box-item {
+  position: relative;
+}
+.campaign .cam-box-item img {
+  width: 200px;
+}
+.campaign .cam-box-item .cam-box-caption {
+  position: absolute;
+  top: 0;
+  color: #554F64;
+  background-color: #F7F7F7;
+  display: block;
+  transition: 0.5s;
+}
+.campaign .cam-box-item .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 3px;
+  cursor: pointer;
+  background: linear-gradient(180deg, hsla(291deg, 9%, 71%, 0.5) 0%, hsla(302deg, 30%, 84%, 0.5) 0%, hsla(218deg, 22%, 27%, 0.9) 100%);
+  opacity: 0;
+  transition: 0.5s;
+}
+.campaign .cam-box-item .overlay-text {
+  color: #F7F7F7;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  background-color: #554F64;
+  transition: 0.5s;
+  font-size: small;
+}
+.campaign .cam-box-item:hover .cam-box-caption {
+  top: 40%;
+}
+.campaign .cam-box-item:hover .overlay {
+  opacity: 0.5;
+}
+.campaign .cam-box-item:hover .overlay-text {
+  opacity: 1;
+}
+
+.cam-content {
+  text-align: center;
+}
+.cam-content .card {
+  border: none;
+}
+.cam-content .row img {
+  height: 200px;
+}
+.cam-content .card-body {
+  background-color: #F7F7F7;
+}
+.cam-content .card-title {
+  margin: 0;
+  padding: 5px;
+  background-color: #554F64;
+  color: #F7F7F7;
+}
+.cam-content .btn {
+  background-color: #F7F7F7;
+  color: #354053;
+  border-radius: 0%;
+  transition: 0.5s;
+}
+.cam-content .btn:hover {
+  background-color: #354053;
+  color: #F7F7F7;
+}
+.cam-content .load-btn .btn {
+  background-color: #354053;
+  color: #F7F7F7;
+  transition: 0.5s;
+}
+.cam-content .load-btn .btn:hover {
+  background-color: #F7F7F7;
+  color: rgb(188, 96, 127);
+  border: 1px solid rgb(188, 96, 127);
+  font-weight: bolder;
 }
 
 .footer {
