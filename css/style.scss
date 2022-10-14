@@ -769,6 +769,84 @@ a {
         color: $lightcolor;
     }
 }
+// ////////////////////////
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.pop-up img {
+    width: 7%;
+    transition: 0.5s;
+}
+
+.pop-up img:hover {
+    transform: scale(1.2);
+}
+.open-button {
+    cursor: pointer;
+    position: fixed;
+    bottom:20px;
+    right: 20px;
+
+  }
+  
+  .form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 10px;
+    border: 3px dotted $highlight;
+    z-index: 9;
+  }
+  
+  
+  .form-container {
+    max-width: 400px;
+    padding: 20px;
+    margin: 5px;
+    background-color: $primary;
+
+    img {
+        width: 70px;
+    }
+
+    h5 {
+        font-weight: bolder;
+    }
+  }
+  
+  
+  .form-container input[type=text], .form-container input[type=password] {
+    width: 90%;
+    height: 35px;
+    padding: 15px;
+    border: none;
+    background: $lightcolor;
+  }
+  
+  
+  .form-container .submit, .cancel  {
+    border: none;
+    cursor: pointer;
+
+    .bi {
+        display: block;
+        font-size: 250% ;
+        color: $secondary;
+        transition: 0.5s;
+    }
+
+    .bi:hover {
+        transform: scale(1.2);
+    }
+  }
+  
+  .form-container .cancel {
+    position: absolute;
+    top: 0;
+    right: 10px;
+  }
+  
+
+
 
 
 

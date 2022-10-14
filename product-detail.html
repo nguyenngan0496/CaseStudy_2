@@ -60,7 +60,7 @@
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ">
               <li class="nav-item ">
-                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="index.html" target= "_blank">Home</a>
               </li>
               <li class="nav-item  dropdown">
                 <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown">
@@ -97,7 +97,7 @@
                 
               </li>
               <li class="nav-item ">
-                <a class="nav-link" href="campaign.html">Campaign</a>
+                <a class="nav-link" href="campaign.html" target= "_blank">Campaign</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#contact">Contact</a>
@@ -494,11 +494,48 @@
       </div>
       <p class="text-center small">Copyright © 1515z Shop. All Rights Reserved.</p>
     </div>
-  <!-- End Footer -->
+    <!-- End Footer -->
+
+     <!-- Pop up -->
+     <div class="pop-up">
+      <img class="open-button" onclick="openForm()" src="./Src/popuplogo.png" alt="">
+      <div class="form-popup col justify-content-center" id="myform">
+        
+        <form action="#" class="w-80 form-container">
+          <div class="flex">
+            <img src="./Src/popupimg.png" alt=""><h5>Tell us about your concern ASAP!</h5>
+          </div>
+          
+            <label for="inputname" class="form-label"><i class="bi bi-stars"></i>Your Name:</label>
+            <input type="text" class="form-control" id="inputname" required>
+        
+            <label for="inputphone" class="form-label"><i class="bi bi-stars"></i>Phone Number:</label>
+            <input type="text" class="form-control" id="inputphone" required>
+
+            <label for="inputmes" class="form-label" ><i class="bi bi-stars"></i>Message:</label>
+            <input type="text" class="form-control" style="height: 100px" id="inputmes" required>
+            <div class="submit text-center">
+              <button type="submit" class="btn"><i class="bi bi-send-check-fill"></i></button>
+            </div>
+            <div class="close">
+              <button type="button" class="btn cancel" onclick="closeForm()"><i class="bi bi-x-square-fill"></i></button>
+            </div>
+        </form>
+    
+    </div>
+    <!-- End Pop up -->
 
   <script>
     const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
     const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+  
+    function openForm() {
+      document.getElementById("myform").style.display = "block";
+    }
+    
+    function closeForm() {
+      document.getElementById("myform").style.display = "none";
+    }
   </script>
 
  

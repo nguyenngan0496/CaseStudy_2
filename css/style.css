@@ -598,6 +598,73 @@ a {
   color: #F7F7F7;
 }
 
+/* Button used to open the contact form - fixed at the bottom of the page */
+.pop-up img {
+  width: 7%;
+  transition: 0.5s;
+}
+
+.pop-up img:hover {
+  transform: scale(1.2);
+}
+
+.open-button {
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 10px;
+  border: 3px dotted rgb(188, 96, 127);
+  z-index: 9;
+}
+
+.form-container {
+  max-width: 400px;
+  padding: 20px;
+  margin: 5px;
+  background-color: #B9AEBB;
+}
+.form-container img {
+  width: 70px;
+}
+.form-container h5 {
+  font-weight: bolder;
+}
+
+.form-container input[type=text], .form-container input[type=password] {
+  width: 90%;
+  height: 35px;
+  padding: 15px;
+  border: none;
+  background: #F7F7F7;
+}
+
+.form-container .submit, .cancel {
+  border: none;
+  cursor: pointer;
+}
+.form-container .submit .bi, .cancel .bi {
+  display: block;
+  font-size: 250%;
+  color: #354053;
+  transition: 0.5s;
+}
+.form-container .submit .bi:hover, .cancel .bi:hover {
+  transform: scale(1.2);
+}
+
+.form-container .cancel {
+  position: absolute;
+  top: 0;
+  right: 10px;
+}
+
 @media only screen and (min-width: 577px), (max-width: 767px) {
   .intro-is, .intro-po {
     height: auto;
