@@ -4,6 +4,9 @@ body, head {
   box-sizing: border-box;
   font-family: "Nunito", sans-serif !important;
 }
+body img, head img {
+  max-width: 100%;
+}
 
 a {
   text-decoration: none;
@@ -87,7 +90,6 @@ a {
 .carousel-inner {
   position: relative;
   background-size: contain;
-  height: 450px;
 }
 
 .product {
@@ -161,18 +163,12 @@ a {
 .product .card-body {
   position: relative;
 }
-.product .card-body .price {
-  position: absolute;
-  bottom: 40%;
-  left: 40%;
-}
 .product .card-link {
   display: inline-block;
   width: 100%;
   background-color: #F7F7F7;
   border: 1px solid #354053;
   transition: 0.5s;
-  position: absolute;
   bottom: 0%;
   left: 0%;
 }
@@ -341,7 +337,7 @@ a {
   display: inline-block;
   width: auto;
   background-color: #F7F7F7;
-  border: 1px solid #354053;
+  border: 1px solid rgb(188, 96, 127);
   transition: 0.5s;
   color: rgb(188, 96, 127);
 }
@@ -379,11 +375,6 @@ a {
 .recommend .card-body {
   position: relative;
 }
-.recommend .card-body .price {
-  position: absolute;
-  bottom: 40%;
-  left: 40%;
-}
 .recommend .card-link {
   display: inline-block;
   width: 100%;
@@ -391,7 +382,6 @@ a {
   background-color: #F7F7F7;
   border: 1px solid #354053;
   transition: 0.5s;
-  position: absolute;
   bottom: 0%;
   left: 0%;
 }
@@ -462,7 +452,7 @@ a {
   position: relative;
 }
 .campaign .cam-box-item img {
-  width: 200px;
+  max-width: 200px;
 }
 .campaign .cam-box-item .cam-box-caption {
   position: absolute;

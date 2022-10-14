@@ -61,6 +61,10 @@ body, head {
     padding:0;
     box-sizing: border-box;
     font-family: 'Nunito', sans-serif !important;
+
+    img {
+        max-width: 100%;
+    }
 }
 
 a {
@@ -155,7 +159,6 @@ a {
 .carousel-inner {
     position: relative;
     background-size:contain;
-    height: 450px;
 }
 
 // /////////////////////////
@@ -223,11 +226,11 @@ a {
     .card-body {
         position:relative;
 
-        .price {
-            position: absolute;
-            bottom: 40%;
-            left: 40%;
-        }
+        // .price {
+        //     position: absolute;
+        //     bottom: 40%;
+        //     left: 40%;
+        // }
     }
 
     .card-link {
@@ -236,7 +239,7 @@ a {
         background-color: $lightcolor;
         border: 1px solid $secondary;
         transition: 0.5s;
-        position: absolute;
+        // position: absolute;
         bottom: 0%;
         left: 0%;
         
@@ -436,7 +439,7 @@ a {
         display: inline-block;
         width: auto;
         background-color: $lightcolor;
-        border: 1px solid $secondary;
+        border: 1px solid $highlight;
         transition: 0.5s;
         color: $highlight;
         
@@ -470,6 +473,8 @@ a {
         color: $highlight;
     }
 
+    
+
 }
 .recommend {
     .card {
@@ -490,11 +495,11 @@ a {
     
     .card-body {
         position:relative;
-        .price {
-            position: absolute;
-            bottom: 40%;
-            left: 40%;
-        }
+        // .price {
+        //     position: absolute;
+        //     bottom: 40%;
+        //     left: 40%;
+        // }
     }
 
     .card-link {
@@ -504,7 +509,7 @@ a {
         background-color: $lightcolor;
         border: 1px solid $secondary;
         transition: 0.5s;
-        position: absolute;
+        // position: absolute;
         bottom: 0%;
         left: 0%;
        
@@ -591,7 +596,7 @@ a {
     .cam-box-item {
         position: relative;
         img {
-            width: 200px;
+            max-width: 200px;
         }
         
         .cam-box-caption {
@@ -764,6 +769,7 @@ a {
         color: $lightcolor;
     }
 }
+
 
 
 @media only screen and (min-width: 577px),(max-width:767px) {
