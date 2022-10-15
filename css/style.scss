@@ -208,6 +208,7 @@ a {
         color: $secondary;
     }
 }
+
 .product {
     .card {
         text-align: center;
@@ -690,14 +691,7 @@ a {
         font-weight: bolder;
     }
 }
-    
-      
-      
-      
-      
-
-
-
+  
 // /////////////////////////
 // Footer
 
@@ -814,7 +808,7 @@ a {
   }
   
   
-  .form-container input[type=text], .form-container input[type=password] {
+  .form-container input[type=text] {
     width: 90%;
     height: 35px;
     padding: 15px;
